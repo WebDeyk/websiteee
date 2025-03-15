@@ -1,0 +1,461 @@
+body {
+    background: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.home {
+    width: 100%;
+    background-image: url('home.jpg');
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.70);
+    background-size: cover;
+}
+
+.home-content h1 {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.home-content h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.home-content p {
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media button {
+    margin: 0 10px;
+    font-size: 3em;
+    color: brown;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.social-media button:hover {
+    color: transparent;
+    color: white;
+    transition: .3s ease;
+}
+
+hr {
+    margin-top: 30px;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.btn {
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: transparent;
+    box-shadow: 1px 1px 50px 1px brown;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+        padding-top: 100px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .social-media button {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .social-media a {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+}
+
+section {
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: transparent;
+    transition: background-color 0.5s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar.scrolled {
+    background-color: brown;
+}
+
+span {
+    color: brown;
+}
+
+.aboutContainer {
+    border: 1px solid brown;
+    text-align: center;
+}
+
+.about {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: brown;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        padding: 20px 0;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .about img {
+        margin-top: 20px;
+    }
+}
+
+.track {
+    background-color: dimgray;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    padding: 50px 0;
+}
+
+.track h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: brown;
+}
+
+.track p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.track-box {
+    background-color: gray;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.track-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.track-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.track-box li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .track {
+        padding: 20px 0;
+    }
+
+    .track h2 {
+        font-size: 20px;
+    }
+
+    .track p {
+        font-size: 16px;
+    }
+
+    .track-box {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .home-content h1 {
+        margin-top: 300px;
+    }
+
+    .track h2 {
+        margin-top: 300px;
+    }
+
+    .about h2 {
+        margin-top: 250px;
+    }
+
+    .about img {
+        margin-top: 250px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: brown;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+ul.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+ul.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul.social-links li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.image-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1f242d;
+}
+
+.image-gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: brown;
+    margin-top: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.school-history {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.school-history h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.history-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.history-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: brown;
+}
+
+.history-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 1024px) {
+    .history-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .school-history h2 {
+        font-size: 2em;
+    }
+
+    .history-item h3 {
+        font-size: 1.6em;
+    }
+
+    .history-item p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-item {
+        padding: 15px;
+    }
+}
